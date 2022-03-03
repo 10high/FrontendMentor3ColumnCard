@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sr-only {
+    margin: -1px;
+    clip-path: inset (50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cardflexwrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin-top: 2rem;   
+}
+
+.gridgeneric {
+    display: grid;
+    padding: 3rem;
+    max-width: 17.1rem;
+    row-gap: 2.4rem; 
+    min-width: 146px;
+}
+
+
+.gridheader {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.gridbody {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.gridbuttonwrapper {
+    margin-bottom: 1rem;
+    min-width: 150px;
+}
+
+
+.gridbutton {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%);
+    border-width: 2px;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    transition: ease-in-out 0.25s;
+}
+
+.gridbutton:hover {
+background-color: hsl(0, 0%, 95%, 0);
+color: hsl(0, 0%, 95%);
+}
+
+.sedangrid {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;  
+}
+
+.suvgrid {
+    background-color: hsl(184, 100%, 22%); 
+}
+
+.luxurygrid {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.sedanbutton {
+    color:hsl(31, 77%, 52%)
+}
+
+
+.suvbutton {
+    color:hsl(184, 100%, 22%)
+}
+
+.luxurybutton {
+    color:hsl(179, 100%, 13%)
+}
+
+/*Desktop Version*/
+@media (min-width: 800px) {
+    .cardflexwrapper {
+        flex-direction: row;
+    }
+
+    .gridbuttonwrapper {
+        margin-top: 3.5rem;
+    }
+
+    .sedangrid {
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.7rem;
+    }
+
+    .luxurygrid {
+        border-top-right-radius: 0.7rem;
+        border-bottom-left-radius: 0rem;
+    }
+}
+
+
+
+.attribution { 
+    margin-top: 1rem; 
+    font-size: 1rem; 
+    text-align: center;
+    display: block;
+}
+
+.attribution a {  
+    color: hsl(228, 45%, 44%); 
+}
